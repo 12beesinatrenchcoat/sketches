@@ -1,5 +1,5 @@
 # 12beesinatrenchcoat/sketches
-![GitHub last commit](https://img.shields.io/github/last-commit/12beesinatrenchcoat/sketches?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/12beesinatrenchcoat/sketches?style=flat-square) [![wakatime](https://wakatime.com/badge/user/6ad077df-c2d6-4490-8f76-a473d3aa907a/project/33fd3f7f-f2b7-4f62-b55e-6405186fd0a7.svg?style=flat-square)](https://wakatime.com/@12beesinatrenchcoat/projects/ixmiksjctn)
 
 Whenever I feel like messing around with [p5.js](https://p5js.org/). Maybe also other JavaScript stuff in the future.
 
