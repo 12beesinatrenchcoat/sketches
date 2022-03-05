@@ -1,5 +1,6 @@
 export const metadata = {
-	name: "rays"
+	name: "rays",
+	description: "i thought giving line endings a velocity would be fun. click and drag."
 }
 
 export default (p) => {

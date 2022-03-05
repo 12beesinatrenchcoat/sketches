@@ -1,5 +1,6 @@
 export const metadata = {
-	name: "bouncing dots and connections"
+	name: "bouncing dots and connections",
+	description: "the first sketch. non-interactive."
 }
 
 export default (p) => {

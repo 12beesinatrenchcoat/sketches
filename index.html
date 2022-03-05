@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sketches</title>
-    <link rel="stylesheet" href="style.css">
-    <!--<script src="./p5.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="./script.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sketches</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- <script src="./p5.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script defer src="./script.mjs" type="module"></script>
 </head>
 <body>
-    <header>
-        <div id="header-content">
-            <h1><a href="https://12beesinatrenchcoat.github.io">12beesinatrenchcoat</a>/sketches</h1>
-            <select name="sketch" id="sketches-list" disabled></select>
-            <span id="sketch-name">name of sketch</span> - <time>creation date</time>    
-        </div>
-    </header>
-    <main id="sketch-container">
+	<header>
+			<span id="header-top">
+				<h1>12beesinatrenchcoat/sketches</h1>
+				<nav>
+					<a href="https://12beesinatrenchcoat.github.io" target="_blank">website</a>
+					<a href="https://github.com/12beesinatrenchcoat/sketches" target="_blank">github repo</a>
+					<button id="reload-sketch">reload sketch</button>
+					<button id="hide-header">hide header</button>
+				</nav>
+			</span>
+			<span>
+				<select name="sketch" id="sketches-list"></select>
+				<span id="sketch-name">name of sketch</span> <span id="sketch-description">description</span>
+			</span>
+	</header>
+	<main id="sketch-container">
 
-    </main>
-    
+	</main>
+	
 </body>
 </html>

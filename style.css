@@ -1,40 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 * {
-    font-family: "Open Sans", "Roboto", "Arial", sans-serif;
-    margin: 0;
+	font-family: "Open Sans", "Roboto", "Arial", sans-serif;
+	margin: 0;
 }
 
 :root{
-    font-size: 14px;
+	font-size: 12px;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    color: white;
-    background: #00000064;
-    backdrop-filter: blur(4px);
+	position: fixed;
+	width: 100%;
+	color: white;
+	background: #00000064;
+	backdrop-filter: blur(4px);
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+}
+
+h1, nav{
+	display: inline-block
 }
 
 body {
-    overflow: hidden;
+	overflow: hidden;
+	background: black;
 }
 
 canvas {
-    width: 100% !important;
-    height: 100vh !important;
+	width: 100% !important;
+	height: 100vh !important;
 }
 
 a{
-    color: inherit; 
+	color: inherit; 
 }
 
-select {
-    width: 14ch;
-    background: #00000000;
-    color: white;
-    border: 1px solid white;
+button, select {
+	width: 14ch;
+	background: #00000000;
+	color: white;
+	border: 1px solid white;
+	font-size: inherit;
+}
+
+@keyframes invert {
+	to {
+		background: white;
+		color: black;
+	}
+}
+
+button:hover, a:hover, select:hover {
+	animation: invert 0.5s;
+	animation-fill-mode: forwards;
 }
 
 option{
-    background: #00000064;
+	background: #00000064;
+}
+
+optgroup {
+	background: #00000096;
+	color: white;
+}
+
+#sketch-name{
+	font-weight: 700;
+}
+
+#header-top{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
