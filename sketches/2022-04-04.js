@@ -58,6 +58,10 @@ export default (p) => {
 
 	}
 
+	p.windowResized = () => {
+		p.resizeCanvas(p.windowWidth, p.windowHeight);
+	}
+
 	function curve (number, divisor = 1.5) {
 		number -= min(2, abs(number)) * sign(number)
 		number -= min(4, abs(number)) * 0.5 * sign(number)

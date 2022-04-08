@@ -16,6 +16,7 @@ Object.keys(sketches).reverse().forEach(year => {
 
 console.log(sketches);
 
+// Load the first sketch.
 loadSketch(
 	sketches[
 		Object.keys(sketches).reverse()[0]
@@ -44,6 +45,7 @@ async function loadSketch (sketchName) {
 	
 }
 
+// Reloading.a
 document.getElementById("reload-sketch").addEventListener("click", event => {
 	loadSketch(currentSketchName);
 	event.target.textContent = "reloaded!";
