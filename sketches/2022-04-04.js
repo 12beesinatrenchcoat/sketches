@@ -1,6 +1,6 @@
 export const metadata = {
 	name: "storm tied to gyroscope",
-	description: "i liked the rotation properties."
+	description: "i liked the rotation properties. (requires a gyroscope, tilt your device!)"
 }
 
 export default (p) => {

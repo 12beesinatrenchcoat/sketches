@@ -29,9 +29,17 @@ body {
 	background: black;
 }
 
-canvas {
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100% !important;
 	height: 100vh !important;
+}
+
+canvas {
+	max-width: 100% !important;
+	max-height: 100vh !important;
 }
 
 a{
