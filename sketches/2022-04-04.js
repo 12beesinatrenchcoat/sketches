@@ -7,7 +7,7 @@ export default (p) => {
 	const {abs, min, sign} = Math;
 
 	p.setup = () => {
-		p.createCanvas(p.windowWidth, p.windowHeight);
+		p.createCanvas(window.innerWidth, window.innerHeight);
 		p.background(0);
 		p.colorMode(p.RGB, 255, 255, 255, 1);
 		p.frameRate(120);
@@ -20,8 +20,8 @@ export default (p) => {
 		balls.push(
 			{
 				pos: p.createVector(
-					p.random(p.windowWidth),
-					p.random(p.windowHeight)
+					p.random(window.innerWidth),
+					p.random(window.innerHeight)
 				),
 				rot: p.createVector(0, 0),
 				size: p.random(10, 25)
@@ -50,16 +50,16 @@ export default (p) => {
 
 			pos.sub(rot);
 
-			if (pos.x > p.windowWidth + 25) { pos.x = -25 }
-			if (pos.x < -25) { pos.x = p.windowWidth + 25 }
-			if (pos.y > p.windowHeight + 25) { pos.y = -25 }
-			if (pos.y < -25) { pos.y = p.windowHeight + 25 }
+			if (pos.x > window.innerWidth + 25) { pos.x = -25 }
+			if (pos.x < -25) { pos.x = window.innerWidth + 25 }
+			if (pos.y > window.innerHeight + 25) { pos.y = -25 }
+			if (pos.y < -25) { pos.y = window.innerHeight + 25 }
 		}
 
 	}
 
 	p.windowResized = () => {
-		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		p.resizeCanvas(window.innerWidth, window.innerHeight);
 	}
 
 	function curve (number, divisor = 1.5) {

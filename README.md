@@ -9,5 +9,12 @@ I got my start in programming with Khan Academy's JavaScript course, which used 
 ### no, like, why make *this?*
 I used to use OpenProcessing. But then I found out they do NFTs. And that's something I can't support.
 
+## how?
+Put sketches in [`/sketches/`](/sketches), start the name of the file with a year (used to group sketches). Run `node .` to create a sketches.mjs. Serve on a server.
+
+## contributing
+No contributions to [`/sketches/`](/sketches) will be accepted (unless it's a severe or security issue, or something). This repo is more of a showcase than anything.  
+Other files are fair game.
+
 # license
 [Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)](./LICENSE). Do what you want, but give credit, and put it under the same license.

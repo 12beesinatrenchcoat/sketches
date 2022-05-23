@@ -7,7 +7,7 @@ export default (p) => {
 	const pts = []
 
 	p.setup = () => {
-		p.createCanvas(p.windowWidth, p.windowHeight);
+		p.createCanvas(window.innerWidth, window.innerHeight);
 		p.colorMode(p.HSB);
 		p.background(0);
 		p.stroke(255);
@@ -74,6 +74,6 @@ export default (p) => {
 
 	// resize window
 	p.windowResized = () => {
-		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		p.resizeCanvas(window.innerWidth, window.innerHeight);
 	}
 }

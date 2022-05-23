@@ -5,7 +5,7 @@ export const metadata = {
 
 export default (p) => {
 	p.setup = () => {
-		p.createCanvas(p.windowWidth, p.windowHeight);
+		p.createCanvas(window.innerWidth, window.innerHeight);
 		p.colorMode(p.HSB);
 		p.noStroke();
 		p.background(16);
@@ -21,16 +21,16 @@ export default (p) => {
 	let pY;
 
 	p.draw = () => {
-		const x = random ? Math.random() * p.windowWidth : p.mouseX;
-		const y = random ? Math.random() * p.windowHeight : p.mouseY;
-		const aspectRatio = p.windowWidth / p.windowHeight;
+		const x = random ? Math.random() * window.innerWidth : p.mouseX;
+		const y = random ? Math.random() * window.innerHeight : p.mouseY;
+		const aspectRatio = window.innerWidth / window.innerHeight;
 		
 		p.background(0, 0, 0, 0.01);
 		
 		p.fill(
-			((x + y) / 2) / p.windowWidth * 360,
+			((x + y) / 2) / window.innerWidth * 360,
 			50, 
-			100 - ((((x + y) / 2) / p.windowHeight) * 10),
+			100 - ((((x + y) / 2) / window.innerHeight) * 10),
 			0.8
 		);
 		
@@ -57,7 +57,7 @@ export default (p) => {
 	}
 
 	p.windowResized = () => {
-		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		p.resizeCanvas(window.innerWidth, window.innerHeight);
 		p.background(16);
 	}
 }

@@ -5,7 +5,7 @@ export const metadata = {
 
 export default (p) => {
 	p.setup = () => {
-		p.createCanvas(p.windowWidth, p.windowHeight);
+		p.createCanvas(window.innerWidth, window.innerHeight);
 		p.background(255);
 		p.colorMode(p.RGB, 255, 255, 255, 1);
 		p.frameRate(120);
@@ -70,6 +70,6 @@ export default (p) => {
 	}
 
 	p.windowResized = () => {
-		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		p.resizeCanvas(window.innerWidth, window.innerHeight);
 	}
 }

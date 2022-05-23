@@ -22,7 +22,7 @@ export const metadata = {
 export default (p) => {
 	/* Future Andy: this is new, added because Khan Academy usually does the setup function — but this isn't Khan Academy. Also the resize function. */
 	p.setup = () => {
-		p.createCanvas(p.windowWidth, p.windowHeight);
+		p.createCanvas(window.innerWidth, window.innerHeight);
 		p.background(24);
 		p.noStroke();
 
@@ -31,7 +31,7 @@ export default (p) => {
 		p.frameRate(120);
 	}
 	p.windowResized = () => {
-		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		p.resizeCanvas(window.innerWidth, window.innerHeight);
 		p.background(24);
 		p.noStroke();
 

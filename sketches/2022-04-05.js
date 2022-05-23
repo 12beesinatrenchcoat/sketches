@@ -14,8 +14,8 @@ let font;
 const charactersLength = characters.length;
 
 export default (p) => {
-	let width = p.windowWidth;
-	let height = p.windowHeight;
+	let width = window.innerWidth;
+	let height = window.innerHeight;
 	let words = [];
 	class Word {
 		constructor(x, y) {
@@ -65,7 +65,7 @@ export default (p) => {
 	}
 
 	p.setup = () => {
-		p.createCanvas(p.windowWidth, p.windowHeight);
+		p.createCanvas(window.innerWidth, window.innerHeight);
 		p.frameRate(60);
 		p.fill("#222d");
 		p.textAlign(p.LEFT)
@@ -125,9 +125,9 @@ export default (p) => {
 	}
 
 	p.windowResized = () => {
-		p.resizeCanvas(p.windowWidth, p.windowHeight);
-		width = p.windowWidth;
-		height = p.windowHeight;
+		p.resizeCanvas(window.innerWidth, window.innerHeight);
+		width = window.innerWidth;
+		height = window.innerHeight;
 	}
 }
 

@@ -6,13 +6,13 @@ export const metadata = {
 export default (p) => {
 	var f;
 	p.setup = () => {
-		p.createCanvas(p.windowWidth, p.windowHeight);
+		p.createCanvas(window.innerWidth, window.innerHeight);
 		/* Future Andy: Originally used "createFont", but that's not a thing in p5js, I guess. Also now using JetBrains Mono instead of "monospace" because it gave me an error ;-; */
 		f = p.loadFont("/fonts/JetBrainsMono-Regular.ttf");
 	}
 
 	p.windowResized = () => {
-		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		p.resizeCanvas(window.innerWidth, window.innerHeight);
 	}
 
 	    //Initial Variables
