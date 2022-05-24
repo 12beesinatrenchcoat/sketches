@@ -61,7 +61,7 @@ export default (p) => {
 	words.push(new Word());
 
 	p.preload = () => {
-		font = p.loadFont("/fonts/JetBrainsMono-Regular.ttf")
+		font = p.loadFont("./fonts/JetBrainsMono-Regular.ttf")
 	}
 
 	p.setup = () => {
